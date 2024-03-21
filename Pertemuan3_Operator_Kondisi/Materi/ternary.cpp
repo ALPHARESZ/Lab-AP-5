@@ -8,12 +8,12 @@ int main() {
 
   cout << "Berapa umur kamu :";
   cin >> umur;
-  string result[0] = umur > 1000 ? "Kamu bukan manusia" : "Kamu mungkin manusia";
-  cout << result[0];
+  string result1 = umur > 1000 ? "Kamu bukan manusia\n" : "Kamu mungkin manusia\n";
+  cout << result1;
   
   cout << "Input tinggi badan kamu :";
   cin >> tinggi;
-  string result[1] = tinggi > 200 ? "Kamu berbakat jadi pebasket" : "Kamu tidak berbakat jadi pebasket";
-  cout << result[1];
+  string result2 = tinggi > 200 ? "Kamu berbakat jadi pebasket\n" : "Kamu tidak berbakat jadi pebasket\n";
+  cout << result2;
   return 0;
 }
