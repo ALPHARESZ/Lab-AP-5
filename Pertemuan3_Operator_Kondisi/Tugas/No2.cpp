@@ -6,9 +6,9 @@ int main(){
 
   char nama[50];
   int golongan, anak;
-  long gajiPokok, gajiKotor, gajiBersih, pajak;
+  long gajiPokok, gajiKotor, gajiBersih, pajak, biayaAnak;
 
-  cout << "Inpu nama anda : ";
+  cout << "Input nama anda : ";
   cin.getline(nama , 50); //panggil function getline agar user dapat menginput 'spasi' dari namanya
   cout << "Input golongan anda (1/2/3) : ";
   cin >> golongan;
@@ -20,13 +20,23 @@ int main(){
     } else {  
       gajiPokok = 2500000;}
   } else {
-    cout << "Inputan anda invalid, silahkan input golongan (1/2/3)";
+    cout << "Inputan anda tidak valid, silahkan input golongan (1/2/3)";
   }
 
   cout << "Input jumlah anak anda : ";
   cin >> anak;
-  long biayaAnak = anak > 2 ? (500000 * 2) + ((anak - 2) * 750000) : 500000 * anak;
-
+  if (anak < 0){
+    cout << "Inputan anda tidak valid, silahkan input jumlah anak lebih dari atau sama dengan 0";
+  } else {
+    if (anak == 0){
+      biayaAnak = 0;
+    } else if (anak <= 2){
+      biayaAnak = 500000;
+    } else {
+      biayaAnak = 500000 * 2 + (anak - 2) * 750000;
+    }
+  }
+  
   gajiKotor = gajiPokok + biayaAnak;
   pajak = gajiKotor * 0.05;
   gajiBersih = gajiPokok - pajak;
