@@ -9,7 +9,7 @@ int main(){
   long gajiPokok, gajiKotor, gajiBersih, pajak;
 
   cout << "Inpu nama anda : ";
-  cin.getline(nama , 50);
+  cin.getline(nama , 50); //panggil function getline agar user dapat menginput 'spasi' dari namanya
   cout << "Input golongan anda (1/2/3) : ";
   cin >> golongan;
   if (golongan > 0 && golongan < 4){

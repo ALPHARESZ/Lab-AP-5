@@ -7,8 +7,8 @@ int main() {
   float tinggi[2], berat, BMI;
 
   cout << "Input tinggi anda dalam cm : ";
-  cin >> tinggi[0];
-  tinggi[1] = tinggi[0] / 100.0;
+  cin >> tinggi[0]; //tinggi index 0 adalah tinggi dalam cm
+  tinggi[1] = tinggi[0] / 100.0; //tinggi index 1 adalah tinggi dalam m
   cout << "Input berat anda dalam kg : ";
   cin >> berat;
   BMI = berat / pow(tinggi[1], 2);
