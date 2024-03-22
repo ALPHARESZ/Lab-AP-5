@@ -21,17 +21,17 @@ int main(){
       gajiPokok = 2500000;}
   } else {
     cout << "Inputan anda tidak valid, silahkan input golongan (1/2/3)";
+    exit(0); //panggil function exit agar program langsung berhenti jika inputan salah
   }
 
   cout << "Input jumlah anak anda : ";
   cin >> anak;
   if (anak < 0){
     cout << "Inputan anda tidak valid, silahkan input jumlah anak lebih dari atau sama dengan 0";
+    exit(0); //panggil function exit agar program langsung berhenti jika inputan salah
   } else {
-    if (anak == 0){
-      biayaAnak = 0;
-    } else if (anak <= 2){
-      biayaAnak = 500000;
+    if (anak <= 2){
+      biayaAnak = 500000 * anak;
     } else {
       biayaAnak = 500000 * 2 + (anak - 2) * 750000;
     }
