@@ -9,7 +9,7 @@ int main() {
   cout << "Input sebuah bilangan : ";
   cin >> bilangan;
 
-  string result = bilangan > 0 ? "Bilangan positif" : "Bilangan negatif";
+  string result = bilangan % 2 == 0 ? "Bilangan genap" : "Bilangan ganjil";
   cout << result;
   return 0;
 }
