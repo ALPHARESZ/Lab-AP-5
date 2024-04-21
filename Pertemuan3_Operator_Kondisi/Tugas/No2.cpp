@@ -18,7 +18,8 @@ int main(){
     } else if (golongan == 2){  
       gajiPokok = 3000000;
     } else {  
-      gajiPokok = 2500000;}
+      gajiPokok = 2500000;
+      }
   } else {
     cout << "Inputan anda tidak valid, silahkan input golongan (1/2/3)";
     exit(0); //panggil function exit agar program langsung berhenti jika inputan salah
