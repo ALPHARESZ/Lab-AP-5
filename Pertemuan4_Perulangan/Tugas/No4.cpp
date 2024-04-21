@@ -5,10 +5,7 @@ int main() {
   system("CLS");
   
   int n;
-  string hasil = "";
-  string duplikatO;
-  string duplikatE;
-  string duplikatTandaSeru;
+  string hasil;
 
   cout << "Input nilai n:";
   cin >> n;
@@ -19,10 +16,9 @@ int main() {
     cout << "Input nilai n:";
     cin >> n;
   }
-  
 
   //blok kode untuk memunculkan output
-  hasil = 'H' + duplikatO.append(n, 'o') + 'r' + duplikatE.append(n, 'e') + duplikatTandaSeru.append(n, '!');
+  hasil = 'H' + string(n, 'o') + 'r' + string(n, 'e') + string(n, '!');
   cout << hasil;
   return 0;
 }
