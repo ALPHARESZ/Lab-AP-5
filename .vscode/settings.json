@@ -5,7 +5,10 @@
     "cmath": "cpp",
     "typeinfo": "cpp",
     "chrono": "cpp",
-    "typeindex": "cpp"
+    "typeindex": "cpp",
+    "numbers": "cpp",
+    "vector": "cpp",
+    "iosfwd": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
